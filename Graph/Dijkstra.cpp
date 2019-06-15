@@ -15,10 +15,10 @@ void printPath(int);
 int main() 
 {
 	scanf("%d%d%d", &vertex_num,&edge_num, &source);
-	//¾ØÕóµÄ³õÊ¼»¯
+	//ï¿½ï¿½ï¿½ï¿½Ä³ï¿½Ê¼ï¿½ï¿½
 	fill(matrix[0], matrix[0] + MAXV * MAXV, INT_MAX);
 	int a, b, z;
-	cout << "ÇëÊäÈë¸÷±ßµÄ±ßµÄÐÅÏ¢£¨ËùÁ¬µÄ¶¥µãºÍÈ¨Êý£©£º" << endl;
+	cout << "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ßµÄ±ßµï¿½ï¿½ï¿½Ï¢ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¶ï¿½ï¿½ï¿½ï¿½È¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" << endl;
 	for(int i=0;i<edge_num;i++)
 	{
 		scanf("%d%d%d", &a,&b,&z);
@@ -31,7 +31,7 @@ int main()
 	{
 		if (i != source)
 		{
-            printf("%dµ½%dµÄ×î¶Ì¾àÀëÊÇ£º%d£¬Â·¾¶ÊÇ£º", source, i, dist[i]);
+            printf("%dåˆ°%dçš„æœ€çŸ­è·ç¦»æ˜¯ï¼š%dï¼Œè·¯å¾„æ˜¯ï¼š", source, i, dist[i]);
             printPath(i);
             printf("\n");
 		}
@@ -50,8 +50,8 @@ void Dijkstra(int source)
 		path[i] = source;
 	}
 
-	int min_cost;//×îÐ¡È¨Öµ
-	int min_cost_index;//×îÐ¡È¨ÖµµÄÏÂ±ê
+	int min_cost;//ï¿½ï¿½Ð¡È¨Öµ
+	int min_cost_index;//ï¿½ï¿½Ð¡È¨Öµï¿½ï¿½ï¿½Â±ï¿½
 
 	for (int i = 1; i < vertex_num; i++)
 	{
