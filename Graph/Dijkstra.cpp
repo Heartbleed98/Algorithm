@@ -15,10 +15,10 @@ void printPath(int);
 int main() 
 {
 	scanf("%d%d%d", &vertex_num,&edge_num, &source);
-	//����ĳ�ʼ��
+	//矩阵的初始化
 	fill(matrix[0], matrix[0] + MAXV * MAXV, INT_MAX);
 	int a, b, z;
-	cout << "��������ߵıߵ���Ϣ�������Ķ����Ȩ������" << endl;
+	cout << "请输入各边的边的信息（所连的顶点和权数）：" << endl;
 	for(int i=0;i<edge_num;i++)
 	{
 		scanf("%d%d%d", &a,&b,&z);
@@ -50,8 +50,8 @@ void Dijkstra(int source)
 		path[i] = source;
 	}
 
-	int min_cost;//��СȨֵ
-	int min_cost_index;//��СȨֵ���±�
+	int min_cost;//最小权值
+	int min_cost_index;//最小权值的下标
 
 	for (int i = 1; i < vertex_num; i++)
 	{
