@@ -32,8 +32,8 @@ int main()
 		if (i != source)
 		{
             printf("%d到%d的最短距离是：%d，路径是：", source, i, dist[i]);
-            printPath(i);
-            printf("\n");
+			printPath(i);
+			printf("\n");
 		}
 	}
 
@@ -70,7 +70,7 @@ void Dijkstra(int source)
 		for (int j = 0; j < vertex_num; j++)
 		{
 			if (visited[j] == false &&
-				matrix[min_cost_index][j] != INT_MAX&&
+				matrix[min_cost_index][j] != INT_MAX &&
 				matrix[min_cost_index][j] + min_cost < dist[j])
 			{
 				dist[j] = matrix[min_cost_index][j] + min_cost;
