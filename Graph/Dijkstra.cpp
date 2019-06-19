@@ -50,8 +50,8 @@ void Dijkstra(int source)
 		path[i] = source;
 	}
 
-	int min_cost;//最小权值
-	int min_cost_index;//最小权值的下标
+	int min_cost; // 最小权值
+	int min_cost_index; // 最小权值的下标
 
 	for (int i = 1; i < vertex_num; i++)
 	{
