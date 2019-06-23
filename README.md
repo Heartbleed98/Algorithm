@@ -1,1 +1,5 @@
 # Algorithm
+
+- Search
+- Sort
+- Graph
