@@ -7,6 +7,7 @@ using namespace std;
 const int MAXN = 11;
 int n, P[MAXN], hashTable[MAXN] = {false};
 
+// index是位置，x是填入某一位置的数字
 void generateP(int index)
 {
 	if(index == n + 1)
