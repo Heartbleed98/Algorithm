@@ -3,17 +3,17 @@
 #include<vector>
 using namespace std;
 
-int binarySearch(int arr[], int x, int l, int r)
+int binarySearch(int arr[], int x, int low, int high)
 {
-	int mid = l + (r - l) / 2;
-	while(l <= r)
+	int mid = low + (high - low) / 2;
+	while(low <= high)
 	{
 		if(x == arr[mid])
 			return mid;
 		else if(x < arr[mid])
-			r = mid - 1;
+			high = mid - 1;
 		else
-			l = mid + 1;	
+			low = mid + 1;	
 	}	
 	return -1;
 }
