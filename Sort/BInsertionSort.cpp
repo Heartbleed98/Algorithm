@@ -21,15 +21,15 @@ void BInsertionSort(int arr[], int n)
                 low = mid + 1;
         }
 
-		for(int j = i - 1; j >= high + 1; j--)
+		for(int j = i - 1; j >= low; j--)
             arr[j+1] = arr[j];
-        arr[high+1] = key;
+        arr[low] = key;
 	}
 }
 
 int main()
 {
-	int arr[] = {12, 11, 13, 5, 6, 43, 27}; 
+	int arr[] = {2, 2, 12, 11, 13, 5, 6, 43, 43, 27}; 
     int n = sizeof(arr)/sizeof(arr[0]); 
     BInsertionSort(arr, n);
     for(int i = 0; i < n; i++)
