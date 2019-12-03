@@ -9,7 +9,7 @@ int matrix[MAXV][MAXV];
 scanf("%d%d%d", &vertex_num,&edge_num, &source);
 fill(matrix[0], matrix[0] + MAXV * MAXV, INT_MAX);
 int a, b, z;
-cout << "请输入各边的边的信息（所连的顶点和权数）：" << endl;
+printf("请输入各边的边的信息（所连的顶点和权数）：\n");
 for(int i=0;i<edge_num;i++)
 {
     scanf("%d%d%d", &a,&b,&z);
