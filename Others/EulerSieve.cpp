@@ -15,7 +15,7 @@ void FindPrime()
         for(int j = 0; j < pNum && i * prime[j] < MAXV; j++)
         {
             p[i * prime[j]] = true;
-            if(i % prime[j] == 0) //说明i之前被prime[j]筛选过了
+            if(i % prime[j] == 0) //说明i之前被prime[j]筛选过了，此时的prime[j]一定是i的最小质因子
                 break;
         }
     }
