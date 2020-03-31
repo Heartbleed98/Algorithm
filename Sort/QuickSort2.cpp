@@ -1,13 +1,6 @@
-/* C implementation QuickSort */
-#include<stdio.h> 
-
-// A utility function to swap two elements 
-void swap(int* a, int* b) 
-{ 
-	int t = *a; 
-	*a = *b; 
-	*b = t; 
-} 
+#include<iostream>
+#include<algorithm>
+using namespace std;
 
 /* This function takes last element as pivot, places 
 the pivot element at its correct position in sorted 
@@ -26,10 +19,10 @@ int partition (int arr[], int low, int high)
 		if (arr[j] <= pivot) 
 		{ 
 			i++; // increment index of smaller element 
-			swap(&arr[i], &arr[j]); 
+			swap(arr[i], arr[j]); 
 		} 
 	} 
-	swap(&arr[i + 1], &arr[high]); 
+	swap(arr[i + 1], arr[high]); 
 	return (i + 1); 
 } 
 
@@ -58,7 +51,7 @@ void printArray(int arr[], int size)
 	int i; 
 	for (i=0; i < size; i++) 
 		printf("%d ", arr[i]); 
-	printf("n"); 
+	printf("\n"); 
 } 
 
 // Driver program to test above functions 
@@ -67,7 +60,7 @@ int main()
 	int arr[] = {10, 7, 8, 9, 1, 5, 5, 22}; 
 	int n = sizeof(arr)/sizeof(arr[0]); 
 	quickSort(arr, 0, n-1); 
-	printf("Sorted array: n "); 
+	printf("Sorted array: "); 
 	printArray(arr, n); 
 	return 0; 
 } 
