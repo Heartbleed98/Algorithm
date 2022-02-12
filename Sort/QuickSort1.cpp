@@ -30,7 +30,7 @@ void QuickSort(int arr[], int low, int high)
 
 int main()
 {
-    int arr[] = {10, 7, 8, 9, 101, 1, 5, 5, 22, 0, -1, 98}; 
+	int arr[] = {10, 7, 8, 9, 101, 1, 5, 5, 22, 0, -1, 98}; 
 	int n = sizeof(arr)/sizeof(arr[0]); 
 	QuickSort(arr, 0, n-1); 
 
