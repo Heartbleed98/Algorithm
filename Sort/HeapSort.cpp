@@ -39,7 +39,7 @@ int main()
     int arr[8] = {12, 1, 30, 23, 6, 9, 99, 11};
     int n = sizeof(arr)/sizeof(arr[0]); 
     HeapSort(arr, n);
-    for(int i = 0; i < 8; i++)
+    for(int i = 0; i < n; i++)
         printf("%d ", arr[i]);
     return 0;
 }

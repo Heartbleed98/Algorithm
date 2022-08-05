@@ -3,7 +3,6 @@ using namespace std;
 
 int partition(int arr[], int low, int high)
 {
-    int tmp = arr[low];
     int pivot = arr[low];
     while(low < high)
     {
@@ -30,14 +29,12 @@ void QuickSort(int arr[], int low, int high)
 
 int main()
 {
-	int arr[] = {10, 7, 8, 9, 101, 1, 5, 5, 22, 0, -1, 98}; 
+	int arr[] = {0,-1,1,2,4,2,2,3,1,4}; 
 	int n = sizeof(arr)/sizeof(arr[0]); 
 	QuickSort(arr, 0, n-1); 
 
     for(int i = 0; i < n; i++)
-    {
         cout<<arr[i]<<" ";
-    }
-
+    cout << endl;
     return 0;
 }
